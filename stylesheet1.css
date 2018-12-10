@@ -1,0 +1,202 @@
+/* Comment: stylesheet for the webpage of me, Charlotte Brand 
+Handy for style: https://www.sessions.edu/color-calculator/
+*/
+
+html, body {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+
+h1.left {
+    font-family: "Garamond", serif;
+    font-size: 1.7em;
+    color: navy;
+    margin-left: 0px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-right: 0px;
+    text-align: center;
+}
+
+h2.left {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 1.1em;
+    color: navy;
+    margin-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    text-align: center;
+}
+
+h1.main {
+    font-family: "Garamond", serif;
+    font-size: 3.5em;
+    color: black;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-right: 0px;
+    text-align: left;
+}
+
+h2.main {
+    color: navy;
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    text-align: left;
+}
+
+p.homepage {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 1.0em;
+    color: black;
+    margin-left: 40px;
+    margin-right: 100px;
+    text-align: left;
+    font-style: italic;
+}
+
+a.left {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 1.1em;
+    color: navy;
+    margin-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.left:hover {
+    text-decoration: underline;
+}
+
+a.left:active {
+    text-decoration: underline;
+}
+
+.centerimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.backgroundimage {
+    display: block;
+    margin-left: 0;
+    margin_right: 0;
+    width: 100%
+}
+
+#wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0;
+} 
+
+#leftmenu {
+  position: fixed;
+  top: 0;
+  left: 10%;
+  width: 15%; /* use viewport percentage lenghts for screen width - eigenlijk wil ik dezelfde breedte hoe dan ook, 
+                  maar niet in pixels, want dat verschilt per scherm... */
+  height: 100%;
+  background-color: #e7ebe3;
+  text-align: center;
+}
+
+#maincontent {
+  float: right;
+  position: relative;
+  right: 10%;
+  width: 65%;
+  height: 100%;
+  background-color: none;
+}
+
+#homepage {
+    /*
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    float: right;
+    position: relative;
+    top: 0;
+    right: 10%;
+    width: 65%;
+    height: 100%;
+    background-color: none;*/
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#aboutme {
+    background-color: white;
+}
+
+img.homepageimg {
+    height:calc(100vh - 2px); 
+    width:65vw; 
+    vertical-align: top;
+    display: block;
+    object-fit: cover;
+    border:1px solid #021a40;
+    opacity: 0.8;
+}
+
+.overimage {
+    position: absolute;
+    /*bottom: 40%;*/
+    bottom: 35%;
+    left: 0%;
+}
+
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 3872;
+	
+  /* Set up proportionate scaling (% first) */
+  width: 65%;
+  height: 100vh;
+  
+  object-fit: cover;
+	
+  /* Set up positioning */
+  position: relative;
+  top: 0;
+  left: 0;
+  
+  z-index: -1;
+}
+
+@media screen and (max-width: 3872px) { /* Specific to this particular image */
+  img.bg {
+    left: 25%;
+    margin-left: 0px;   /* -512 at first, 50% */
+  }
+}
+
+.footer  p {
+   position: fixed;
+   left: 10%;
+   bottom: 0;
+   width: 15%;
+   color: #a6a6a6;
+   text-align: center;
+   margin-left: 0px;
+   font-family: "Trebuchet MS", Helvetica, sans-serif;
+   font-size: 0.8em;
+}

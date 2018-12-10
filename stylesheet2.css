@@ -1,0 +1,325 @@
+/* Comment: stylesheet for the webpage of me, Charlotte Brand 
+Handy for style: https://www.sessions.edu/color-calculator/
+*/
+
+/*
+@font-face {
+ font-family: 'FontName';
+ src:url('/fonts/icomoon/FontName.eot');
+ src:url('/fonts/icommon/FontName.eot?#iefix') format('embedded-opentype'),
+ url('/fonts/icomoon/FontName.woff') format('woff'),
+ url('/fonts/icomoon/FontName.ttf') format('truetype'),
+ url('/fonts/icomoon/FontName.svg#icomoon') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+*/
+
+@font-face {
+font-family: 'Abril Fatface';
+src: url('fonts/Abril_Fatface/AbrilFatface-Regular.ttf') format('truetype'),
+url('fonts/Abril_Fatface/abrilfatface-regular-webfont.eot') format('eot'),
+url('fonts/Abril_Fatface/abrilfatface-regular-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: 'Limelight';
+src: url('fonts/Limelight/Limelight-Regular.ttf') format('truetype'),
+url('fonts/Limelight/limelight-regular-webfont.eot') format('eot'),
+url('fonts/Limelight/limelight-regular-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+      
+@font-face {
+font-family: 'Permanent Marker';
+src: url('fonts/Permanent_Marker/PermanentMarker-Regular.ttf') format('truetype'),
+url('fonts/Permanent_Marker/permamentmarker-regular-webfont.eot') format('eot'),
+url('fonts/Permanent_Marker/permamentmarker-regular-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Noto Sans';
+src: url('fonts/Noto_Sans_SC/notosanssc-thin-webfont.ttf') format('truetype'), 
+url('fonts/Noto_Sans_SC/notosanssc-thin-webfont.eot') format('eot'), 
+url('fonts/Noto_Sans_SC/notosanssc-thin-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+	  
+html {	
+}
+
+img {
+	image-orientation: from-image;
+}
+
+body.home {
+	background: url(images/scandinavie_achtergrond_3.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    background-color: white;
+}
+
+
+
+h1.home{
+	font-family: "Permanent Marker", sans-serif;
+    font-size: 1.7em;
+    color: white;
+    margin-left: 20px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    text-align: left;
+	letter-spacing: 0.20em;
+}
+
+p.home{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 1.0em;
+    color: white;
+    margin-left: 20px;
+    margin-right: 0px;
+    text-align: left;
+	letter-spacing: 0.10em;
+	font-weight: bold;
+	line-height:2;
+}
+
+img.logo_home{
+	margin-left:18px;
+}
+
+img.logo_portfolio{
+	margin-right:5px;
+	margin-top:5px;
+}
+
+body.portfolio {
+	background-color: white;
+}
+
+h1.portfolio{
+	font-family: "Permanent Marker", sans-serif;
+    font-size: 1.7em;
+    color: black;
+    margin-left: 20px;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    text-align: center;
+	letter-spacing: 0.20em;
+}
+
+h2.portfolio{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 0.9em;
+    color: black;
+    margin-left: 20px;
+    margin-right: 0px;
+	margin-bottom: 100px;
+    text-align: center;
+	letter-spacing: 0.10em;
+	font-weight: bold;
+	line-height:1;
+}
+
+p.portfolio{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 0.9em;
+    color: black;
+    margin-left: 20px;
+    margin-right: 0px;
+	margin-bottom: 10px;
+    text-align: center;
+	letter-spacing: 0.10em;
+	font-weight: bold;
+	line-height:1;
+}
+
+img.portfolio{
+	padding-top: 2.5px;
+	padding-bottom: 2.5px;
+	padding-left: 2.5px;
+	padding-right: 2.5px;
+}
+
+a.images {
+    text-decoration: none;
+}
+
+
+.footer_home  p {
+   position: fixed;
+   left: 0px;
+   bottom: 0px;
+   width: 150px;
+   color: #9bacc6;
+   text-align: center;
+   margin-left: 0px;
+   font-family: "Trebuchet MS", Helvetica, sans-serif;
+   letter-spacing: 0.05em;
+   font-size: 0.8em;
+}
+
+.footer  p {
+	background-color: white;
+	height: 80px;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100;
+    color: #9bacc6;
+    text-align: center;
+    margin-left: 0px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    letter-spacing: 0.05em;
+    font-size: 0.8em;
+}
+
+#photos_portfolio {
+  /* Prevent vertical gaps */
+  line-height: 0px;
+   
+  -webkit-column-count: 4;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    4;
+  -moz-column-gap:      0px;
+  column-count:         4;
+  column-gap:           5px; 
+}
+
+#photos_portfolio img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 1200px) {
+  #photos_portfolio {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 1000px) {
+  #photos_portfolio {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  #photos_portfolio {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 500px) {
+  #photos_portfolio {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
+
+#upper_left {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#upper_right {
+	position: absolute;
+	top: 0;
+	right: 0%;
+}
+
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
