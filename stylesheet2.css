@@ -59,13 +59,24 @@ img {
 	image-orientation: from-image;
 }
 
+html.home {
+  background: url(images/scandinavie_achtergrond_03.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    background-color: black;
+}
+
+
 body.home {
+  /*
 	background: url(images/scandinavie_achtergrond_03.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-    background-color: white;
+    background-color: black;*/
 }
 
 
