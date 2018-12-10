@@ -52,7 +52,8 @@ font-weight: normal;
 font-style: normal;
 }
 
-html {
+html, body {
+  height:100%;
 }
 
 img {
@@ -60,6 +61,7 @@ img {
 }
 
 html.home {
+  height:100%;
   background: url(images/scandinavie_achtergrond_03.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -70,6 +72,7 @@ html.home {
 
 
 body.home {
+  height:100%;
   /*
 	background: url(images/scandinavie_achtergrond_03.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
