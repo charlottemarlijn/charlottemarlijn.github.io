@@ -67,7 +67,8 @@ html.home {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-    background-color: black;
+  background-color: black;
+  overflow: hidden;
 }
 
 
