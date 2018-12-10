@@ -1,4 +1,4 @@
-/* Comment: stylesheet for the webpage of me, Charlotte Brand 
+/* Comment: stylesheet for the webpage of me, Charlotte Brand
 Handy for style: https://www.sessions.edu/color-calculator/
 */
 
@@ -33,7 +33,7 @@ url('fonts/Limelight/limelight-regular-webfont.woff') format('woff');
 font-weight: normal;
 font-style: normal;
 }
-      
+
 @font-face {
 font-family: 'Permanent Marker';
 src: url('fonts/Permanent_Marker/PermanentMarker-Regular.ttf') format('truetype'),
@@ -45,14 +45,14 @@ font-style: normal;
 
 @font-face {
 font-family: 'Noto Sans';
-src: url('fonts/Noto_Sans_SC/notosanssc-thin-webfont.ttf') format('truetype'), 
-url('fonts/Noto_Sans_SC/notosanssc-thin-webfont.eot') format('eot'), 
+src: url('fonts/Noto_Sans_SC/notosanssc-thin-webfont.ttf') format('truetype'),
+url('fonts/Noto_Sans_SC/notosanssc-thin-webfont.eot') format('eot'),
 url('fonts/Noto_Sans_SC/notosanssc-thin-webfont.woff') format('woff');
 font-weight: normal;
 font-style: normal;
 }
-	  
-html {	
+
+html {
 }
 
 img {
@@ -60,7 +60,7 @@ img {
 }
 
 body.home {
-	background: url(images/scandinavie_achtergrond_3.jpg) no-repeat center center fixed;
+	background: url(images/scandinavie_achtergrond_03.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -188,13 +188,13 @@ a.images {
 #photos_portfolio {
   /* Prevent vertical gaps */
   line-height: 0px;
-   
+
   -webkit-column-count: 4;
   -webkit-column-gap:   0px;
   -moz-column-count:    4;
   -moz-column-gap:      0px;
   column-count:         4;
-  column-gap:           5px; 
+  column-gap:           5px;
 }
 
 #photos_portfolio img {
@@ -289,13 +289,13 @@ a.images {
 }
 
 /* Add Animation - Zoom in the Modal */
-.modal-content, #caption { 
+.modal-content, #caption {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
 
 @keyframes zoom {
-  from {transform:scale(0)} 
+  from {transform:scale(0)}
   to {transform:scale(1)}
 }
 
