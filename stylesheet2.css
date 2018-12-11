@@ -53,7 +53,7 @@ font-style: normal;
 }
 
 html, body {
-  height: 100%;
+  height: 100vh;
 }
 
 img {
@@ -61,18 +61,17 @@ img {
 }
 
 html.home {
-  height:100%;
-  background: url(images/scandinavie_achtergrond_03.jpg) no-repeat center center fixed;
+  height:100vh;
+  background: url(images/scandinavie_achtergrond_02.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  overflow: hidden;
 }
 
 
-body.home {
-  height:100%;
+body {
+  height:100vh;
   /*
 	background: url(images/scandinavie_achtergrond_03.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
@@ -86,46 +85,46 @@ body.home {
 
 h1.home{
   font-family: "Permanent Marker", sans-serif;
-  font-size: 3.5vw;
+  font-size: 2.2em;
   color: black;
-  margin-left: 20px;
-  margin-top: 70px;
-  margin-bottom: 50px;
+  margin-left: 0;
+  margin-top: 8vh;
+  margin-bottom: 5vh;
   margin-right: 0px;
   text-align: center;
 	letter-spacing: 0.20em;
   text-shadow:
-    -1px -1px 0 #ffffff,
-     0   -1px 0 #ffffff,
-     1px -1px 0 #ffffff,
-     1px  0   0 #ffffff,
-     1px  1px 0 #ffffff,
-     0    1px 0 #ffffff,
-    -1px  1px 0 #ffffff,
-    -1px  0   0 #ffffff;
+    -0.02em -0.02em 0 #ffffff,
+     0   -0.02em 0 #ffffff,
+     0.02em -0.02em 0 #ffffff,
+     0.02em  0   0 #ffffff,
+     0.02em  0.02em 0 #ffffff,
+     0    0.02em 0 #ffffff,
+    -0.02em  0.02em 0 #ffffff,
+    -0.02em  0   0 #ffffff;
 }
 
 p.home{
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 0.9em;
+  font-size: 1.0em;
   color: black;
-  margin-left: 20px;
-  margin-right: 0px;
-  margin-bottom: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
   text-align: center;
-	letter-spacing: 0.10em;
+	letter-spacing: 0.05em;
 	font-weight: bold;
-	line-height:1;
+	line-height:1em;
   text-shadow:
-    -1px -1px 0 #ffffff,
-     0   -1px 0 #ffffff,
-     1px -1px 0 #ffffff,
-     1px  0   0 #ffffff,
-     1px  1px 0 #ffffff,
-     0    1px 0 #ffffff,
-    -1px  1px 0 #ffffff,
-    -1px  0   0 #ffffff;
-  max-width: 600px;
+    -0.05em -0.05em 0 #ffffff,
+     0   -0.05em 0 #ffffff,
+     0.05em -0.05em 0 #ffffff,
+     0.05em  0   0 #ffffff,
+     0.05em  0.05em 0 #ffffff,
+     0    0.05em 0 #ffffff,
+    -0.05em  0.05em 0 #ffffff,
+    -0.05em  0   0 #ffffff;
+  max-width: 65vw;
   margin: 0 auto;
 }
 
@@ -178,6 +177,7 @@ p.regularpage{
 	letter-spacing: 0.10em;
 	font-weight: bold;
 	line-height:1;
+  margin: 0 auto;
 }
 
 img.portfolio{
