@@ -7,6 +7,7 @@
   <title>Charlotte Brand - Portfolio</title>
   <link rel="icon" type="image/ico" href="images/weblogo.png" />
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <body class="regularpage">
   <div id="upper_right">
@@ -23,7 +24,7 @@
     <a href="/">Home</a> &nbsp; <br class="mobile-break">
     <a href="experience.html">Professional experience</a> &nbsp; <br class="mobile-break">
     Creative portfolio &nbsp; <br class="mobile-break">
-    <a href="contact.html">Contact</a> &nbsp; 
+    <a href="contact.html">Contact</a> &nbsp;
   </h2>
   </div>
 
@@ -38,18 +39,9 @@
 
   <section id="photos_portfolio">
     <!-- pencil drawings -->
-    <div class="container">
       <img src="images/portfolio/Heisenberg.jpg" alt="Heisenberg" width=300px class="portfolio">
-      <div class="overlay">
-        <div class="hovertext">Test text <br/> two lines</div>
-      </div>
-    </div>
-    <div class="container">
       <img src="images/portfolio/Skeleton.jpg" alt="Skeleton" width=300px class="portfolio">
-      <div class="overlay">
-        <div class="hovertext">Test text</div>
-      </div>
-    </div>
+
     <div class="container">
       <img src="images/portfolio/Child.jpg" alt="Child" width=300px class="portfolio">
       <div class="overlay">
@@ -232,6 +224,42 @@
     </div>
   </section>
 
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+  </div>
+
+  <script>
+  // Get the modal
+  var modal = document.getElementById('myModal');
+
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = $('.portfolio');
+  var modalImg = $("#img01");
+  var captionText = document.getElementById("caption");
+  $('.portfolio').click(function(){
+      modal.style.display = "block";
+      var newSrc = this.src;
+      modalImg.attr('src', newSrc);
+      captionText.innerHTML = this.alt;
+  });
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  </script>
   <!-- The Modal (https://www.w3schools.com/howto/howto_css_modal_images.asp)
   <div id="myModal" class="modal">
     <span class="close">&times;</span>

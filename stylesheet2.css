@@ -85,8 +85,6 @@ body {
     background-color: black;*/
 }
 
-
-
 h1.home{
   font-family: "Permanent Marker", sans-serif;
   font-size: 2.2em;
@@ -210,7 +208,11 @@ img.portfolio{
 }
 
 a.images {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+a.images:hover{
+  text-decoration: none;
 }
 
 a:link {
@@ -231,37 +233,36 @@ a:hover{
 }
 
 .footer_home  p {
-   position: fixed;
-   left: 0px;
-   bottom: 0px;
-   width: 150px;
-   color: #9bacc6;
-   text-align: center;
-   margin-left: 0px;
-   font-family: "Trebuchet MS", Helvetica, sans-serif;
-   letter-spacing: 0.05em;
-   font-size: 0.8em;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 150px;
+  color: #9bacc6;
+  text-align: center;
+  margin-left: 0px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  letter-spacing: 0.05em;
+  font-size: 0.8em;
 }
 
 .footer  p {
 	background-color: white;
 	height: 80px;
-    position: fixed;
-    left: 0px;
-    bottom: 0px;
-    width: 100;
-    color: #9bacc6;
-    text-align: center;
-    margin-left: 0px;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    letter-spacing: 0.05em;
-    font-size: 0.8em;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100;
+  color: #9bacc6;
+  text-align: center;
+  margin-left: 0px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  letter-spacing: 0.05em;
+  font-size: 0.8em;
 }
 
 #photos_portfolio {
   /* Prevent vertical gaps */
   line-height: 0px;
-
   -webkit-column-count: 4;
   -webkit-column-gap:   0px;
   -moz-column-count:    4;
@@ -276,7 +277,7 @@ a:hover{
   height: auto !important;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   #photos_portfolio {
   -moz-column-count:    3;
   -webkit-column-count: 3;
@@ -285,19 +286,12 @@ a:hover{
 }
 @media (max-width: 1000px) {
   #photos_portfolio {
-  -moz-column-count:    3;
-  -webkit-column-count: 3;
-  column-count:         3;
-  }
-}
-@media (max-width: 800px) {
-  #photos_portfolio {
   -moz-column-count:    2;
   -webkit-column-count: 2;
   column-count:         2;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   #photos_portfolio {
   -moz-column-count:    1;
   -webkit-column-count: 1;
@@ -356,82 +350,91 @@ a:hover{
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+
 /* Style the Image Used to Trigger the Modal */
-#myImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
+.portfolio {
+   border-radius: 5px;
+   cursor: pointer;
+   transition: 0.3s;
 }
 
-#myImg:hover {opacity: 0.7;}
+.portfolio:hover {opacity: 0.7;}
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   padding-top: 100px; /* Location of the box */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
 /* Modal Content (Image) */
 .modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
+   margin: auto;
+   display: block;
+   width: 80%;
+   max-width: 700px;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
+   margin: auto;
+   display: block;
+   width: 80%;
+   max-width: 700px;
+   text-align: center;
+   color: #ccc;
+   padding: 10px 0;
+   height: 150px;
 }
 
 /* Add Animation - Zoom in the Modal */
 .modal-content, #caption {
-  animation-name: zoom;
-  animation-duration: 0.6s;
+   -webkit-animation-name: zoom;
+   -webkit-animation-duration: 0.6s;
+   animation-name: zoom;
+   animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+   from {-webkit-transform:scale(0)}
+   to {-webkit-transform:scale(1)}
 }
 
 @keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
+   from {transform:scale(0)}
+   to {transform:scale(1)}
 }
 
 /* The Close Button */
 .close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
+   position: absolute;
+   top: 15px;
+   right: 35px;
+   color: #f1f1f1;
+   font-size: 40px;
+   font-weight: bold;
+   transition: 0.3s;
 }
 
 .close:hover,
 .close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
+   color: #bbb;
+   text-decoration: none;
+   cursor: pointer;
 }
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
+   .modal-content {
+       width: 100%;
+   }
 }
