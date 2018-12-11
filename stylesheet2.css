@@ -104,13 +104,34 @@ h1.home{
     -0.02em  0   0 #ffffff;
 }
 
+h2.home{
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 1.0em;
+  color: black;
+  text-align: center;
+	letter-spacing: 0.05em;
+	font-weight: bold;
+	line-height:1em;
+  text-shadow:
+    -0.05em -0.05em 0 #ffffff,
+     0   -0.05em 0 #ffffff,
+     0.05em -0.05em 0 #ffffff,
+     0.05em  0   0 #ffffff,
+     0.05em  0.05em 0 #ffffff,
+     0    0.05em 0 #ffffff,
+    -0.05em  0.05em 0 #ffffff,
+    -0.05em  0   0 #ffffff;
+  max-width: 70vw;
+  margin: 0 auto;
+}
+
 p.home{
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 1.0em;
   color: black;
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: 0;
+  margin-bottom: 5vh;
   text-align: center;
 	letter-spacing: 0.05em;
 	font-weight: bold;
@@ -125,7 +146,7 @@ p.home{
     -0.05em  0.05em 0 #ffffff,
     -0.05em  0   0 #ffffff;
   max-width: 65vw;
-  margin: 0 auto;
+  margin: 0 auto 5vh auto; /* margin: [top] [right] [bottom] [left]; */
 }
 
 img.logo_home{
@@ -133,8 +154,8 @@ img.logo_home{
 }
 
 img.logo_portfolio{
-	margin-right:5px;
-	margin-top:5px;
+	margin-right:0;
+	margin-top:0;
 }
 
 body.regularpage {
@@ -143,41 +164,38 @@ body.regularpage {
 
 h1.regularpage{
 	font-family: "Permanent Marker", sans-serif;
-  font-size: 1.7em;
+  font-size: 2.0em;
   color: black;
-  margin-left: 20px;
-  margin-top: 70px;
-  margin-bottom: 10px;
-  margin-right: 0px;
+  margin-left: 0;
+  margin-top: 8vh;
+  margin-bottom: 5vh;
+  margin-right: 0;
   text-align: center;
 	letter-spacing: 0.20em;
 }
 
 h2.regularpage{
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 0.9em;
+  font-size: 1.0em;
   color: black;
-  margin-left: 20px;
-  margin-right: 0px;
-	margin-bottom: 100px;
   text-align: center;
-	letter-spacing: 0.10em;
+	letter-spacing: 0.05em;
 	font-weight: bold;
-	line-height:1;
+	line-height:1em;
+  max-width: 70vw;
+  margin: 0 auto;
 }
 
 p.regularpage{
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 0.9em;
+  font-size: 1.0em;
   color: black;
-  margin-left: 20px;
-  margin-right: 0px;
-	margin-bottom: 10px;
   text-align: center;
-	letter-spacing: 0.10em;
+	letter-spacing: 0.05em;
 	font-weight: bold;
-	line-height:1;
-  margin: 0 auto;
+	line-height:1em;
+  max-width: 65vw;
+  margin: 0 auto 5vh auto; /* margin: [top] [right] [bottom] [left]; */
 }
 
 img.portfolio{
