@@ -91,19 +91,35 @@ a:hover{
   text-decoration: underline;
 }
 
+.center_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5vh;
+}
+
 .footer  p {
-	background-color: white;
-	height: 80px;
+	height: 2vh;
   position: fixed;
-  left: 0px;
-  bottom: 0px;
-  width: 100;
-  color: #9bacc6;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  color: black;
   text-align: center;
   margin-left: 0px;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   letter-spacing: 0.05em;
-  font-size: 0.8em;
+  font-size: 0.7em;
+  background-image: none;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-position: 0% 0%;
+}
+
+.footer_contents {
+  height: 2vh;
+  width: 100vw;
+  margin: auto;
 }
 
 #upper_left {
