@@ -310,67 +310,28 @@ a:hover{
 	right: 0%;
 }
 
-.container {
-  position: relative;
-  width: 100%;
-  padding-top: 0px;
-  padding-bottom: 1px;
-  padding-left: 0px;
-  padding-right: 6px;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #0f0f0f;
-}
-
-.container:hover .overlay {
-  opacity: 0.7;
-}
-
-.hovertext {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 0.9em;
-  letter-spacing: 0.08em;
-  line-height: 1;
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-
+/* ------------------------ THE MODAL IMAGES ON PORTFOLIO PAGE! ----------------------------- */
 /* Style the Image Used to Trigger the Modal */
 .portfolio {
-   border-radius: 5px;
+   border-radius: 1px;
    cursor: pointer;
-   transition: 0.3s;
+   transition: 0.5s;
 }
 
-.portfolio:hover {opacity: 0.7;}
+.portfolio:hover {
+  opacity: 0.5;
+}
 
 /* The Modal (background) */
 .modal {
    display: none; /* Hidden by default */
    position: fixed; /* Stay in place */
    z-index: 1; /* Sit on top */
-   padding-top: 100px; /* Location of the box */
+   padding-top: 8vh; /* Location of the box */
    left: 0;
    top: 0;
-   width: 100%; /* Full width */
-   height: 100%; /* Full height */
+   width: 100vw; /* Full width */
+   height: 100vh; /* Full height */
    overflow: auto; /* Enable scroll if needed */
    background-color: rgb(0,0,0); /* Fallback color */
    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
@@ -380,20 +341,26 @@ a:hover{
 .modal-content {
    margin: auto;
    display: block;
-   width: 80%;
-   max-width: 700px;
+   width: auto;
+   max-height: 80%;
+   max-width: 100%;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
-   margin: auto;
-   display: block;
-   width: 80%;
-   max-width: 700px;
-   text-align: center;
-   color: #ccc;
-   padding: 10px 0;
-   height: 150px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 1.0em;
+  color: #f1f1f1;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  line-height:1em;
+  margin: auto;
+  display: block;
+  width: auto;
+  max-width: 80%;
+  max-height: 80%;
+  text-align: center;
+  padding: 2vw 0;
 }
 
 /* Add Animation - Zoom in the Modal */
@@ -435,6 +402,7 @@ a:hover{
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
    .modal-content {
-       width: 100%;
+       max-width: 100%;
    }
 }
+/* ------------------------------------------------------------------------------------ */
