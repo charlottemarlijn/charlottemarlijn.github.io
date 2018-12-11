@@ -68,7 +68,6 @@ html.home {
   -o-background-size: cover;
   background-size: cover;
   overflow: hidden;
-  background-color: black;
 }
 
 
@@ -86,27 +85,48 @@ body.home {
 
 
 h1.home{
-	font-family: "Permanent Marker", sans-serif;
-    font-size: 1.7em;
-    color: white;
-    margin-left: 20px;
-    margin-top: 25px;
-    margin-bottom: 10px;
-    margin-right: 0px;
-    text-align: left;
+  font-family: "Permanent Marker", sans-serif;
+  font-size: 3.5vw;
+  color: black;
+  margin-left: 20px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  margin-right: 0px;
+  text-align: center;
 	letter-spacing: 0.20em;
+  text-shadow:
+    -1px -1px 0 #ffffff,
+     0   -1px 0 #ffffff,
+     1px -1px 0 #ffffff,
+     1px  0   0 #ffffff,
+     1px  1px 0 #ffffff,
+     0    1px 0 #ffffff,
+    -1px  1px 0 #ffffff,
+    -1px  0   0 #ffffff;
 }
 
 p.home{
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    font-size: 1.0em;
-    color: white;
-    margin-left: 20px;
-    margin-right: 0px;
-    text-align: left;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 0.9em;
+  color: black;
+  margin-left: 20px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  text-align: center;
 	letter-spacing: 0.10em;
 	font-weight: bold;
-	line-height:2;
+	line-height:1;
+  text-shadow:
+    -1px -1px 0 #ffffff,
+     0   -1px 0 #ffffff,
+     1px -1px 0 #ffffff,
+     1px  0   0 #ffffff,
+     1px  1px 0 #ffffff,
+     0    1px 0 #ffffff,
+    -1px  1px 0 #ffffff,
+    -1px  0   0 #ffffff;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 img.logo_home{
@@ -118,43 +138,43 @@ img.logo_portfolio{
 	margin-top:5px;
 }
 
-body.portfolio {
+body.regularpage {
 	background-color: white;
 }
 
-h1.portfolio{
+h1.regularpage{
 	font-family: "Permanent Marker", sans-serif;
-    font-size: 1.7em;
-    color: black;
-    margin-left: 20px;
-    margin-top: 70px;
-    margin-bottom: 10px;
-    margin-right: 0px;
-    text-align: center;
+  font-size: 1.7em;
+  color: black;
+  margin-left: 20px;
+  margin-top: 70px;
+  margin-bottom: 10px;
+  margin-right: 0px;
+  text-align: center;
 	letter-spacing: 0.20em;
 }
 
-h2.portfolio{
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    font-size: 0.9em;
-    color: black;
-    margin-left: 20px;
-    margin-right: 0px;
+h2.regularpage{
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 0.9em;
+  color: black;
+  margin-left: 20px;
+  margin-right: 0px;
 	margin-bottom: 100px;
-    text-align: center;
+  text-align: center;
 	letter-spacing: 0.10em;
 	font-weight: bold;
 	line-height:1;
 }
 
-p.portfolio{
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    font-size: 0.9em;
-    color: black;
-    margin-left: 20px;
-    margin-right: 0px;
+p.regularpage{
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 0.9em;
+  color: black;
+  margin-left: 20px;
+  margin-right: 0px;
 	margin-bottom: 10px;
-    text-align: center;
+  text-align: center;
 	letter-spacing: 0.10em;
 	font-weight: bold;
 	line-height:1;
