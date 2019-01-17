@@ -241,15 +241,44 @@ h1.regularpage{
 }
 
 h2.regularpage{
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 1.0em;
+  font-family: "Permanent Marker", sans-serif;
+  font-size: 1.5em;
   color: black;
-  text-align: center;
+  text-align: left;
 	letter-spacing: 0.05em;
 	font-weight: bold;
 	line-height:1em;
-  max-width: 70vw;
-  margin: 0 auto;
+  max-width: 80vw;
+  margin-top: 0;
+  margin-bottom: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2.regularpage_sub{
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 1.2em;
+  color: black;
+  text-align: left;
+  letter-spacing: 0.01em;
+  font-weight: bold;
+  line-height:1em;
+  max-width: 80vw;
+  margin: 0 auto 2vh auto; /* margin: [top] [right] [bottom] [left]; */
+  font-style: italic;
+  font-weight: bold;
+}
+
+p.regularpage_exp{
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 1.0em;
+  color: black;
+  text-align: left;
+	letter-spacing: 0.01em;
+	/*font-weight: bold;*/
+	line-height:1.2em;
+  max-width: 80vw;
+  margin: 0 auto 5vh auto; /* margin: [top] [right] [bottom] [left]; */
 }
 
 p.regularpage{
