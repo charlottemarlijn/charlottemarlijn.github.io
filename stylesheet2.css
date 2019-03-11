@@ -269,6 +269,20 @@ h2.regularpage_sub{
   font-weight: bold;
 }
 
+h2.regularpage_sub_center{
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 1.2em;
+  color: black;
+  text-align: center;
+  letter-spacing: 0.01em;
+  font-weight: bold;
+  line-height:1em;
+  max-width: 80vw;
+  margin: 0 auto 2vh auto; /* margin: [top] [right] [bottom] [left]; */
+  font-style: italic;
+  font-weight: bold;
+}
+
 p.regularpage_exp{
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 1.0em;
@@ -441,3 +455,12 @@ img.portfolio{
    }
 }
 /*-------------------------------------------------------------------------------------------------*/
+/*---------------------------SETTINGS FOR PORTFOLIO VIDEOS--------------------------------*/
+video.portfoliovid{
+	padding-top: 2.5px;
+	padding-bottom: 2.5px;
+	padding-left: 2.5px;
+	padding-right: 2.5px;
+  width: 600px;
+  align: middle;
+}
